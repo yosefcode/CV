@@ -1,0 +1,7 @@
+.gamedouble {
+  border: var(--yelow) 0.2vw solid;
+}
+
+.gamedouble .title {
+  color: var(--yelow);
+}

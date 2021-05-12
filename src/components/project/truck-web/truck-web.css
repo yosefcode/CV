@@ -1,0 +1,7 @@
+.truckweb {
+  border: var(--purple) 0.2vw solid;
+}
+
+.truckweb .title {
+  color: var(--purple);
+}

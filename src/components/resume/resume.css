@@ -1,0 +1,141 @@
+.resume {
+  margin: 4vw auto;
+  position: relative;
+}
+.divresume {
+  position: absolute;
+  width: 20%;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  border-radius: 2vw;
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+.divresume:after {
+  border-radius: 1.5vw;
+  content: "";
+  position: absolute;
+  top: -0.8vw;
+  left: -0.8vw;
+  right: -0.8vw;
+  bottom: -0.8vw;
+  background: var(--blue);
+  z-index: -1;
+}
+
+.Material {
+  left: 10%;
+  border: var(--purple) 0.2vw solid;
+  color: var(--purple);
+  animation: Material 0.5s;
+  animation-delay: 0s;
+  top: 29vw;
+}
+
+.Heroku {
+  border: var(--orange) 0.2vw solid;
+  color: var(--orange);
+  left: 39%;
+  animation: Material 0.5s both;
+  animation-delay: 0.1s;
+}
+
+.Express {
+  border: var(--yelow) 0.2vw solid;
+  color: var(--yelow);
+  left: 68%;
+  animation: Material 0.5s both;
+  animation-delay: 0.2s;
+}
+
+@keyframes Material {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 29vw;
+  }
+}
+
+.Socket {
+  border: var(--blue-lite) 0.2vw solid;
+  color: var(--blue-lite);
+  left: 24%;
+  animation: Socket 0.5s both;
+  animation-delay: 0.3s;
+}
+
+.MongoDB {
+  border: var(--purple) 0.2vw solid;
+  color: var(--purple);
+  left: 53%;
+  animation: Socket 0.5s both;
+  animation-delay: 0.4s;
+}
+
+@keyframes Socket {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 22.5vw;
+  }
+}
+
+.Node {
+  border: var(--yelow) 0.2vw solid;
+  color: var(--yelow);
+  left: 10%;
+  animation: Node 0.5s both;
+  animation-delay: 0.5s;
+}
+.React {
+  border: var(--orange) 0.2vw solid;
+  color: var(--orange);
+  left: 39%;
+  animation: Node 0.5s both;
+  animation-delay: 0.6s;
+}
+.CSS {
+  border: var(--blue-lite) 0.2vw solid;
+  color: var(--blue-lite);
+  left: 68%;
+  animation: Node 0.5s both;
+  animation-delay: 0.7s;
+}
+
+@keyframes Node {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 16vw;
+  }
+}
+
+.JavaScript {
+  border: var(--blue-lite) 0.2vw solid;
+  color: var(--blue-lite);
+  left: 24%;
+  animation: JavaScript 0.5s both;
+  animation-delay: 0.8s;
+}
+.HTML {
+  border: var(--yelow) 0.2vw solid;
+  color: var(--yelow);
+  left: 53%;
+  animation: JavaScript 0.5s both;
+  animation-delay: 0.9s;
+}
+
+@keyframes JavaScript {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 9.5vw;
+  }
+}

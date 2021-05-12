@@ -1,0 +1,43 @@
+.tabs {
+  position: absolute;
+  width: 68%;
+  top: 3vw;
+  left: 3%;
+}
+
+.btntabs {
+  background-color: rgb(16, 0, 61);
+  height: 3.3vw;
+  width: 12vw;
+  border-radius: 1vw 0;
+  margin-right: 8vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+
+.btntabs:after {
+  border-radius: 1.5vw 0;
+  content: "";
+  position: absolute;
+  top: -0.8vw;
+  left: -0.8vw;
+  right: -0.8vw;
+  bottom: -0.8vw;
+  background: rgb(16, 0, 61);
+  z-index: -1;
+}
+
+.btn1 {
+  border: var(--purple) 0.2vw solid;
+  color: var(--purple);
+}
+.btn2 {
+  border: var(--yelow) 0.2vw solid;
+  color: var(--yelow);
+}
+.btn3 {
+  border: var(--blue-lite) 0.2vw solid;
+  color: var(--blue-lite);
+}

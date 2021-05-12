@@ -1,0 +1,32 @@
+.modaltruckapp {
+  position: fixed;
+  background: rgb(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modaltruckapp .modalimg {
+  position: absolute;
+  border-radius: 1vw;
+  filter: drop-shadow(0 0 0.6vw rgb(0, 0, 0));
+  width: 90%;
+  height: 60%;
+  padding: 1vw;
+  z-index: 5;
+  background-color: rgb(5, 1, 56);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modaltruckapp .imgapp {
+  width: 15%;
+  height: 90%;
+  border-radius: 1vw;
+}

@@ -1,0 +1,7 @@
+.shops {
+  border: var(--yelow) 0.2vw solid;
+}
+
+.shops .title {
+  color: var(--yelow);
+}
