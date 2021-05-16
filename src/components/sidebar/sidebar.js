@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./sidebar.css";
-import Message from "../message/message";
 import what from "./img/WhatsApp.png";
 import git from "./img/git.png";
 import phone from "./img/phone.png";
@@ -23,7 +22,9 @@ function SideBar() {
   const github = (
     <GitHubIcon
       className="git"
-      style={{ fontSize: "3.5vw" }}
+      style={{
+        fontSize: "3.5vw @media only screen and (max-width: 999px) ",
+      }}
       onClick={() => {
         window.open("https://github.com/yosefcode");
       }}
@@ -32,7 +33,10 @@ function SideBar() {
 
   const download = (
     <a href="CV.pdf" download="קורות חיים - יוסף כהן" title="קורות חיים pdf">
-      <GetAppIcon className="download" style={{ fontSize: "3vw" }} />
+      <GetAppIcon
+        className="download"
+        style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      />
     </a>
   );
 
@@ -72,7 +76,6 @@ function SideBar() {
           {download}
           {github}
         </div>
-        <Message />
       </div>
     </div>
   );

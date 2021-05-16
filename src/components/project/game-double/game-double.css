@@ -5,3 +5,12 @@
 .gamedouble .title {
   color: var(--yelow);
 }
+@media only screen and (max-width: 999px) {
+  .gamedouble {
+    border: var(--yelow) 1vw solid;
+  }
+
+  .gamedouble .title {
+    color: var(--yelow);
+  }
+}

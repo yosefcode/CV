@@ -28,6 +28,7 @@
 .sidebar .git {
   cursor: pointer;
   margin: 0 1vw;
+  font-size: 3.5vw;
 }
 
 .sidebar .download {
@@ -37,6 +38,7 @@
   padding: 0.1vw;
   cursor: pointer;
   margin: 0 1vw;
+  font-size: 3vw;
 }
 .sidebar .mail {
   cursor: pointer;
@@ -54,4 +56,62 @@
   margin-top: 2vw;
   /* align-items: center; */
   justify-content: center;
+}
+
+@media only screen and (max-width: 999px) {
+  .sidebar {
+    position: absolute;
+    text-align: center;
+    padding-top: 2vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("../../background-image/vaio_hard_edge.png");
+    box-shadow: 0 0 4vw var(--blue-text);
+    color: var(--blue-text);
+    font-size: 3.2vw;
+    font-weight: 700;
+    line-height: 1.5em;
+  }
+
+  .sidebar .what {
+    width: 6.2vw;
+    height: 6.2vw;
+    cursor: pointer;
+  }
+
+  .sidebar .git {
+    cursor: pointer;
+    margin: 0 5vw 5vw;
+    font-size: 12vw;
+  }
+
+  .sidebar .download {
+    border: var(--blue-text) 0.3vw solid;
+    color: var(--blue-text);
+    border-radius: 50px;
+    padding: 0.1vw;
+    cursor: pointer;
+    margin: 1vw 5vw;
+    font-size: 10vw;
+  }
+  .sidebar .mail {
+    cursor: pointer;
+    width: 6.2vw;
+    height: 6.2vw;
+  }
+  .sidebar .phone {
+    cursor: pointer;
+    width: 6.2vw;
+    height: 6.2vw;
+    border-radius: 30px;
+  }
+  .sidebar .divflex {
+    display: flex;
+    margin-top: 2vw;
+    /* align-items: center; */
+    justify-content: center;
+  }
 }

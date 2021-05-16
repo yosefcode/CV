@@ -147,3 +147,155 @@ h5 {
   font-size: 0.7vw;
   line-height: 1.3vw;
 }
+
+@media only screen and (max-width: 999px) {
+  .project {
+    margin-top: 7%;
+    width: 100%;
+    height: 68vw;
+    /* overflow: auto; */
+    position: relative;
+  }
+
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    color: #fff;
+    font-weight: 500;
+    height: 55vw;
+    max-height: 100vh;
+  }
+
+  .navigation-wrapper {
+    position: relative;
+  }
+
+  .dots {
+    display: flex;
+    padding: 15px 0;
+    justify-content: center;
+  }
+
+  .dot {
+    border: none;
+    width: 7.5vw;
+    height: 3.7vw;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot.active {
+    background: #000;
+  }
+
+  .arrow {
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: rgb(16, 0, 61);
+    cursor: pointer;
+  }
+
+  .arrow--left {
+    left: 1.1vw;
+  }
+
+  .arrow--right {
+    left: auto;
+    right: 1.1vw;
+  }
+
+  .arrow--disabled {
+    fill: rgb(61, 0, 5);
+  }
+
+  .divall {
+    background-color: rgb(16, 0, 61);
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 78%;
+    height: 90%;
+    border-radius: 0 6vw;
+  }
+
+  .divall:after {
+    border-radius: 0 7vw;
+    content: "";
+    position: absolute;
+    top: -3.2vw;
+    left: -3.2vw;
+    right: -3.2vw;
+    bottom: -3.2vw;
+    background: rgb(16, 0, 61);
+    z-index: -1;
+  }
+
+  .title {
+    position: absolute;
+    width: 26%;
+    left: 70%;
+    font-size: 1.4vw;
+    padding-top: 1vw;
+    color: var(--blue-lite);
+    text-align: center;
+    line-height: 2vw;
+  }
+
+  li {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  h5 {
+    line-height: 1.4vw;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .imgproject {
+    position: absolute;
+    width: 65%;
+    height: 75%;
+    top: 5%;
+    left: 3%;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.8vw #ffffff;
+  }
+
+  .divlogo {
+    position: absolute;
+    width: 70%;
+    top: 85%;
+    left: 3%;
+    text-align: center;
+    line-height: 0;
+  }
+  .imglogo {
+    /* width: 2.5vw; */
+    height: 4.5vw;
+    margin: 0.5vw 1.5vw;
+  }
+  .divuser {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 86%;
+    left: 80%;
+    font-size: 1vw;
+    line-height: 1.3vw;
+  }
+}
