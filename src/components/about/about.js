@@ -3,7 +3,7 @@ import "./about.css";
 
 function SideBar() {
   return (
-    <div className="about">
+    <div className="about" dir="rtl">
       <div className="divabout course">
         <div className="title">לימודים </div>
         לימודי Full-Stack <br />
@@ -13,19 +13,21 @@ function SideBar() {
         <li>React native</li>
         <li>Node.js</li>
         <li>Mongoo</li>
-        פיתוח בכלים: js, React, React native, Node.js, Mongoo
+        <li>
+          השתתפות ב-Bootcamp – בניית אפליקציה אשר עוקבת אחר רכבי הסעות תלמידים
+          ומעדכנת מיקום בזמן אמת וזמן הגעה.
+        </li>
       </div>
       <div className="divabout Talents">
         <div className="title">כישורים </div>
+        <li>רצון להתפתח ולהתמקצע.</li>
+        <li>יסודיות.</li>
+        <li>סבלנות.</li>
+        <li>יכולת למידה עצמית.</li>
         <li></li>
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        כישורים: רצון להתפתח ולהתמקצע. יסודיות. סבלנות. יכולת למידה עצמית.
       </div>
-      <div className="divabout works">
+      {/* <div className="divabout works">
         <div className="title">נסיון </div>
         <li>
           בניית אפליקציה לאנדרואיד – דיווחי נהגים לחברה על פעילותם השוטפת במהלך
@@ -68,7 +70,7 @@ function SideBar() {
           השתתפות ב-Bootcamp – בניית אפליקציה אשר עוקבת אחר רכבי הסעות תלמידים
           ומעדכנת מיקום בזמן אמת וזמן הגעה.
         </li>
-      </div>
+      </div> */}
     </div>
   );
 }

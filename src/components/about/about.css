@@ -1,16 +1,9 @@
-.about {
-  margin: 4vw auto;
-  position: relative;
-  width: 90%;
-  height: 40vw;
-}
 .divabout {
   position: absolute;
   width: 30%;
-  /* height: 4vw; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
   flex-direction: column;
   background: var(--blue);
   border-radius: 2vw;
@@ -34,13 +27,12 @@
   left: 55%;
   border: var(--purple) 0.2vw solid;
   color: var(--purple);
-  top: 2vw;
+  top: 6vw;
 }
 
 .Talents {
-  left: 55%;
-  top: 18vw;
-
+  left: 10%;
+  top: 8vw;
   border: var(--orange) 0.2vw solid;
   color: var(--orange);
 }
@@ -51,20 +43,23 @@
   left: 8%;
   top: 2vw;
 }
+
 .about .title {
   background: var(--blue);
-  border: var(--purple) 0.2vw solid;
-  color: var(--purple);
-  border-radius: 2vw;
+  border: var(--blue-lite) 0.2vw solid;
+  color: var(--blue-lite);
+  border-radius: 1vw;
   position: absolute;
-  width: 35%;
-  height: 2vw;
-  top: -1.3vw;
+  width: 45%;
+  height: 3vw;
+  top: -1.9vw;
   right: 2.4vw;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
+  font-size: 1.3vw;
+  font-weight: 700;
   /* z-index: 20; */
 }
 .about .title:after {
