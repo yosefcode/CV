@@ -1,7 +1,10 @@
 .resume {
   margin: 4vw auto;
   position: relative;
+  width: 90%;
+  height: 40vw;
 }
+
 .divresume {
   position: absolute;
   width: 20%;
@@ -26,11 +29,11 @@
   z-index: -1;
 }
 
-.Material {
+.Ntive {
   left: 10%;
   border: var(--purple) 0.2vw solid;
   color: var(--purple);
-  animation: Material 0.5s;
+  animation: Ntive 1s;
   animation-delay: 0s;
   top: 29vw;
 }
@@ -39,7 +42,7 @@
   border: var(--orange) 0.2vw solid;
   color: var(--orange);
   left: 39%;
-  animation: Material 0.5s both;
+  animation: Ntive 1s both;
   animation-delay: 0.1s;
 }
 
@@ -47,11 +50,11 @@
   border: var(--yelow) 0.2vw solid;
   color: var(--yelow);
   left: 68%;
-  animation: Material 0.5s both;
+  animation: Ntive 1s both;
   animation-delay: 0.2s;
 }
 
-@keyframes Material {
+@keyframes Ntive {
   from {
     top: -20vw;
   }
@@ -64,7 +67,7 @@
   border: var(--blue-lite) 0.2vw solid;
   color: var(--blue-lite);
   left: 24%;
-  animation: Socket 0.5s both;
+  animation: Socket 1s both;
   animation-delay: 0.3s;
 }
 
@@ -72,7 +75,7 @@
   border: var(--purple) 0.2vw solid;
   color: var(--purple);
   left: 53%;
-  animation: Socket 0.5s both;
+  animation: Socket 1s both;
   animation-delay: 0.4s;
 }
 
@@ -89,21 +92,21 @@
   border: var(--yelow) 0.2vw solid;
   color: var(--yelow);
   left: 10%;
-  animation: Node 0.5s both;
-  animation-delay: 0.5s;
+  animation: Node 1s both;
+  animation-delay: 1s;
 }
 .React {
   border: var(--orange) 0.2vw solid;
   color: var(--orange);
   left: 39%;
-  animation: Node 0.5s both;
+  animation: Node 1s both;
   animation-delay: 0.6s;
 }
 .CSS {
   border: var(--blue-lite) 0.2vw solid;
   color: var(--blue-lite);
   left: 68%;
-  animation: Node 0.5s both;
+  animation: Node 1s both;
   animation-delay: 0.7s;
 }
 
@@ -120,14 +123,14 @@
   border: var(--blue-lite) 0.2vw solid;
   color: var(--blue-lite);
   left: 24%;
-  animation: JavaScript 0.5s both;
+  animation: JavaScript 1s both;
   animation-delay: 0.8s;
 }
 .HTML {
   border: var(--yelow) 0.2vw solid;
   color: var(--yelow);
   left: 53%;
-  animation: JavaScript 0.5s both;
+  animation: JavaScript 1s both;
   animation-delay: 0.9s;
 }
 

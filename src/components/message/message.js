@@ -34,7 +34,6 @@ function Message() {
         className="btnmessage"
         onClick={() => {
           sendMessage();
-          console.log(message.message);
         }}
       >
         שלח

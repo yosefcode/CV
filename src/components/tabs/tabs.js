@@ -5,43 +5,42 @@ import About from "../about/about";
 import Project from "../project/project";
 
 function TabPanel({ setModal }) {
-  const [project, setProject] = useState(true);
-  const [about, setAbout] = useState(false);
-  const [resume, setResume] = useState(false);
+  const [show, setShow] = useState(0);
+  const [tabproject, setTabproject] = useState();
+  const [tababout, setTababout] = useState();
+  const [tabresume, setTabresume] = useState();
 
   const showProject = () => {
-    setProject(true);
-    setAbout(false);
-    setResume(false);
+    setShow(0);
   };
   const showAbout = () => {
-    setProject(false);
-    setAbout(true);
-    setResume(false);
+    setShow(4);
   };
   const showResume = () => {
-    setProject(false);
-    setAbout(false);
-    setResume(true);
+    setShow(5);
   };
 
   return (
     <div className="tabs">
       <div className="divbtntabs">
-        <button className="btntabs btn1" onClick={showProject}>
+        <button className={`btntabs btn1 ${tabproject} `} onClick={showProject}>
           פרוייקטים
         </button>
-        <button className="btntabs btn2" onClick={showAbout}>
+        <button className={`btntabs btn2 ${tababout} `} onClick={showAbout}>
           על עצמי
         </button>
-        <button className="btntabs btn3" onClick={showResume}>
+        <button className={`btntabs btn3 ${tabresume} `} onClick={showResume}>
           התמחות
         </button>
       </div>
       <div>
-        {project && <Project setModal={setModal} />}
-        {about && <About />}
-        {resume && <Resume />}{" "}
+        <Project
+          setModal={setModal}
+          setTabproject={setTabproject}
+          setTababout={setTababout}
+          setTabresume={setTabresume}
+          show={show}
+        />
       </div>
     </div>
   );

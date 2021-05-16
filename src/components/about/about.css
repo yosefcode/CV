@@ -1,0 +1,80 @@
+.about {
+  margin: 4vw auto;
+  position: relative;
+  width: 90%;
+  height: 40vw;
+}
+.divabout {
+  position: absolute;
+  width: 30%;
+  /* height: 4vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--blue);
+  border-radius: 2vw;
+  font-size: 1vw;
+  font-weight: 700;
+  padding: 2vw;
+}
+.divabout:after {
+  border-radius: 1.5vw;
+  content: "";
+  position: absolute;
+  top: -0.8vw;
+  left: -0.8vw;
+  right: -0.8vw;
+  bottom: -0.8vw;
+  background: var(--blue);
+  z-index: -1;
+}
+
+.course {
+  left: 55%;
+  border: var(--purple) 0.2vw solid;
+  color: var(--purple);
+  top: 2vw;
+}
+
+.Talents {
+  left: 55%;
+  top: 18vw;
+
+  border: var(--orange) 0.2vw solid;
+  color: var(--orange);
+}
+
+.works {
+  border: var(--yelow) 0.2vw solid;
+  color: var(--yelow);
+  left: 8%;
+  top: 2vw;
+}
+.about .title {
+  background: var(--blue);
+  border: var(--purple) 0.2vw solid;
+  color: var(--purple);
+  border-radius: 2vw;
+  position: absolute;
+  width: 35%;
+  height: 2vw;
+  top: -1.3vw;
+  right: 2.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  /* z-index: 20; */
+}
+.about .title:after {
+  border-radius: 1.5vw;
+  content: "";
+  position: absolute;
+  top: -0.8vw;
+  left: -0.8vw;
+  right: -0.8vw;
+  bottom: -0.8vw;
+  background: var(--blue);
+  z-index: -1;
+}

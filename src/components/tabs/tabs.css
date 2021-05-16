@@ -6,7 +6,7 @@
 }
 
 .btntabs {
-  background-color: rgb(16, 0, 61);
+  background-color: rgb(16, 0, 61, 0);
   height: 3.3vw;
   width: 12vw;
   border-radius: 1vw 0;
@@ -25,13 +25,17 @@
   left: -0.8vw;
   right: -0.8vw;
   bottom: -0.8vw;
-  background: rgb(16, 0, 61);
   z-index: -1;
+  background: rgb(16, 0, 61, 0.6);
 }
 
 .btn1 {
   border: var(--purple) 0.2vw solid;
   color: var(--purple);
+}
+
+.active:after {
+  background: rgb(16, 0, 61, 1);
 }
 .btn2 {
   border: var(--yelow) 0.2vw solid;

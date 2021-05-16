@@ -22,33 +22,6 @@ app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-// app.get("/list", (req, res) => {
-//   fs.readFile("products.json", (err, data) => {
-//     const list = JSON.parse(data);
-//     res.send(list);
-//   });
-// });
-
-// app.post("/api/sendemail/", (req, res) => {
-//   fs.readFile("products.json", (err, data) => {
-//     const products = JSON.parse(data);
-//     var name = req.body.name;
-//     var email = req.body.email;
-//     var subject = req.body.subject;
-//     var message = req.body.message;
-//     products.push({
-//       id: products.length + 1,
-//       name: name,
-//       email: email,
-//       subject: subject,
-//       message: message,
-//     });
-//     fs.writeFile("products.json", JSON.stringify(products), (err) => {
-//       res.send(products);
-//     });
-//   });
-// });
-
 let transporter = nodemailer.createTransport(
   smtpTransport({
     service: "gmail",
@@ -64,22 +37,6 @@ let transporter = nodemailer.createTransport(
     },
   })
 );
-
-app.post("/api/send-mail/", function (req, res) {
-  var mailOptions = {
-    to: process.env.GOOGLE_MAIL,
-    subject: "הודעה מכספומט",
-    text: `שם: ${req.body.name} \nמייל: ${req.body.email} \nהודעה: ${req.body.message}`,
-  };
-
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
-  });
-});
 
 app.post("/api/message/", function (req, res) {
   var mailOptions = {

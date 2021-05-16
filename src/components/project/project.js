@@ -6,9 +6,13 @@ import TruckWeb from "./truck-web/truck-web";
 import GameDouble from "./game-double/game-double";
 import Shops from "./shops/shops";
 import TruckApp from "./truck-app/truck-app";
+import Resume from "../resume/resume";
+import About from "../about/about";
 
-export default ({ setModal }) => {
+export default (props) => {
+  const { setModal, setTabproject, setTababout, setTabresume, show } = props;
   const [pause, setPause] = React.useState(false);
+  const [aa, setaa] = React.useState(false);
   const timer = React.useRef();
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [sliderRef, slider] = useKeenSlider({
@@ -35,6 +39,39 @@ export default ({ setModal }) => {
     });
   }, [sliderRef]);
 
+  const projectactive = () => {
+    setTabresume("");
+    setTababout("");
+    setTabproject("active");
+    setaa(false);
+  };
+  const aboutactive = () => {
+    setaa(false);
+    setTabresume("");
+    setTababout("active");
+    setTabproject("");
+  };
+  const resumeactive = () => {
+    setaa(true);
+    setTabresume("active");
+    setTababout("");
+    setTabproject("");
+  };
+
+  React.useEffect(() => {
+    currentSlide === 5
+      ? resumeactive()
+      : currentSlide === 4
+      ? aboutactive()
+      : projectactive();
+  }, [currentSlide]);
+
+  React.useEffect(() => {
+    {
+      slider && slider.moveToSlideRelative(show);
+    }
+  }, [show]);
+
   return (
     <div className="project">
       <div className="navigation-wrapper">
@@ -51,7 +88,14 @@ export default ({ setModal }) => {
           <div className="keen-slider__slide number-slide">
             <Shops />
           </div>
+          <div className="keen-slider__slide number-slide">
+            <About />
+          </div>
+          <div className="keen-slider__slide number-slide">
+            {aa && <Resume />}
+          </div>
         </div>
+
         {slider && (
           <>
             <ArrowLeft

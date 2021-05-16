@@ -1,0 +1,350 @@
+.resume {
+  margin: 4vw auto;
+  position: relative;
+  width: 90%;
+  height: 40vw;
+}
+
+.divresume {
+  position: absolute;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+
+.Socket {
+  left: 15vw;
+  top: 30vw;
+  width: 15vw;
+  border: chartreuse 0.4vw solid;
+  color: chartreuse;
+  animation: Socket 1s both;
+  animation-delay: 0.5s;
+}
+.Socket:after {
+  background-color: var(--blue);
+  width: 5vw;
+  height: 5.4vw;
+  position: absolute;
+  content: "";
+  top: -5.85vw;
+  left: 4.7vw;
+  border: chartreuse solid;
+  border-width: 0.4vw 0.4vw 0;
+}
+
+@keyframes Socket {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 30vw;
+  }
+}
+
+.Express {
+  left: 47.8vw;
+  top: 18.9vw;
+  width: 5vw;
+  height: 16.1vw;
+  border: yellow 0.4vw solid;
+  color: yellow;
+
+  animation: Express 1s both;
+  animation-delay: 0.8s;
+}
+.Express:after {
+  background-color: var(--blue);
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  content: "";
+  top: 10.7vw;
+  right: 5.05vw;
+  border: yellow solid;
+  border-width: 0.4vw 0 0.4vw 0.4vw;
+}
+p {
+  transform: rotate(270deg);
+}
+@keyframes Express {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 18.9vw;
+  }
+}
+
+.Heroku {
+  left: 8.65vw;
+  top: 24.6vw;
+  width: 10.7vw;
+  height: 4.6vw;
+  border: rgb(99, 40, 196) 0.4vw solid;
+  color: rgb(99, 40, 196);
+
+  animation: Heroku 1s both;
+  animation-delay: 1.1s;
+}
+.Heroku:after {
+  background-color: var(--blue);
+  width: 5.5vw;
+  height: 5.7vw;
+  position: absolute;
+  content: "";
+  top: 4.6vw;
+  right: 4.8vw;
+  border: rgb(99, 40, 196) solid;
+  border-width: 0 0.4vw 0.4vw 0.4vw;
+}
+.Heroku:before {
+  background-color: var(--blue);
+  width: 4.8vw;
+  height: 5.6vw;
+  position: absolute;
+  content: "";
+  top: -6vw;
+  left: 5.5vw;
+  border: rgb(99, 40, 196) solid;
+  border-width: 0.4vw 0.4vw 0 0.4vw;
+}
+@keyframes Heroku {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 24.6vw;
+  }
+}
+
+.CSS {
+  left: 30.8vw;
+  top: 30vw;
+  width: 11vw;
+  border: rgb(33, 128, 218) 0.4vw solid;
+  color: rgb(33, 128, 218);
+
+  animation: CSS 1s both;
+  animation-delay: 1.4s;
+}
+.CSS:after {
+  background-color: var(--blue);
+  width: 4.6vw;
+  height: 5.45vw;
+  position: absolute;
+  content: "";
+  top: -5.9vw;
+  left: 6vw;
+  border: rgb(33, 128, 218) solid;
+  border-width: 0.4vw 0 0 0.4vw;
+}
+.CSS:before {
+  background-color: var(--blue);
+  width: 6.2vw;
+  height: 4.7vw;
+  position: absolute;
+  content: "";
+  top: -5.9vw;
+  left: 10vw;
+  border: rgb(33, 128, 218) solid;
+  border-width: 0.4vw 0.4vw 0.4vw 0;
+}
+@keyframes CSS {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 30vw;
+  }
+}
+
+.MongoDB {
+  left: 26vw;
+  top: 24.45vw;
+  width: 10.4vw;
+  border: rgb(213, 124, 235) 0.4vw solid;
+  color: rgb(213, 124, 235);
+
+  height: 4.7vw;
+  animation: MongoDB 1s both;
+  animation-delay: 1.7s;
+}
+.MongoDB:after {
+  background-color: var(--blue);
+  width: 4.8vw;
+  height: 5.5vw;
+  position: absolute;
+  content: "";
+  top: -5.9vw;
+  left: -0.09vw;
+  border: rgb(213, 124, 235) solid;
+  border-width: 0.4vw 0.4vw 0 0;
+}
+.MongoDB:before {
+  background-color: var(--blue);
+  width: 6vw;
+  height: 4.7vw;
+  position: absolute;
+  content: "";
+  top: -5.9vw;
+  left: -6.3vw;
+  border: rgb(213, 124, 235) solid;
+  border-width: 0.4vw 0 0.4vw 0.4vw;
+}
+@keyframes MongoDB {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 24.45vw;
+  }
+}
+
+.React {
+  left: 37.3vw;
+  top: 13.3vw;
+  width: 9.7vw;
+  height: 10.4vw;
+  border: rgb(114, 209, 212) 0.4vw solid;
+  color: rgb(114, 209, 212);
+
+  animation: React 1s both;
+  animation-delay: 2s;
+}
+@keyframes React {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 13.3vw;
+  }
+}
+
+.Node {
+  left: 31.5vw;
+  top: 8.65vw;
+  width: 5vw;
+  height: 15vw;
+  border: rgb(126, 0, 73) 0.4vw solid;
+  color: rgb(126, 0, 73);
+
+  animation: Node 1s both;
+  animation-delay: 2.3s;
+}
+.Node:after {
+  background-color: var(--blue);
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  content: "";
+  top: 4.1vw;
+  right: 5.05vw;
+  border: rgb(126, 0, 73) solid;
+  border-width: 0.4vw 0 0.4vw 0.4vw;
+}
+@keyframes Node {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 8.65vw;
+  }
+}
+
+.Ntive {
+  left: 8.65vw;
+  top: 8.8vw;
+  width: 5vw;
+  height: 15vw;
+  border: rgb(114, 209, 212) 0.4vw solid;
+  color: rgb(114, 209, 212);
+
+  animation: Ntive 1s both;
+  animation-delay: 2.6s;
+}
+.Ntive:after {
+  background-color: var(--blue);
+  width: 5.6vw;
+  height: 5vw;
+  position: absolute;
+  content: "";
+  top: 3.95vw;
+  right: -6.05vw;
+  border: rgb(114, 209, 212) solid;
+  border-width: 0.4vw 0.4vw 0.4vw 0;
+}
+@keyframes Ntive {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 8.8vw;
+  }
+}
+
+.JavaScript {
+  left: 14.5vw;
+  top: 8.75vw;
+  height: 3.6vw;
+  width: 16.2vw;
+  border: rgb(211, 152, 188) 0.4vw solid;
+  color: rgb(211, 152, 188);
+
+  animation: JavaScript 1s both;
+  animation-delay: 2.9s;
+}
+.JavaScript:after {
+  background-color: var(--blue);
+  width: 5.6vw;
+  height: 5.8vw;
+  position: absolute;
+  content: "";
+  top: 3.65vw;
+  left: 5.2vw;
+  border: rgb(211, 152, 188) solid;
+  border-width: 0 0.4vw 0.4vw 0.4vw;
+}
+@keyframes JavaScript {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 8.75vw;
+  }
+}
+
+.HTML {
+  left: 37.3vw;
+  top: 8.65vw;
+  height: 3.85vw;
+  width: 15.3vw;
+  border: rgb(194, 97, 97) 0.4vw solid;
+  color: rgb(194, 97, 97);
+
+  animation: HTML 1s both;
+  animation-delay: 3.2s;
+}
+.HTML:after {
+  background-color: var(--blue);
+  width: 4.8vw;
+  height: 5.7vw;
+  position: absolute;
+  content: "";
+  top: 3.85vw;
+  left: 10.1vw;
+  border: rgb(194, 97, 97) solid;
+  border-width: 0 0.4vw 0.4vw 0.4vw;
+}
+@keyframes HTML {
+  from {
+    top: -20vw;
+  }
+  to {
+    top: 8.65vw;
+  }
+}
