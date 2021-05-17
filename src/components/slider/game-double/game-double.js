@@ -1,6 +1,6 @@
 import React from "react";
 import "./game-double.css";
-import "../project.css";
+import "../slider.css";
 
 import gamedouble from "./game-double.png";
 export default () => {

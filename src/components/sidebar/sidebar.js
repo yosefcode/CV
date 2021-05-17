@@ -6,6 +6,7 @@ import phone from "./img/phone.png";
 import mail from "./img/mail.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import MessageIcon from "@material-ui/icons/Message";
 
 function SideBar() {
   const whatsapp = (
@@ -40,6 +41,13 @@ function SideBar() {
     </a>
   );
 
+  const message = (
+    <MessageIcon
+      className="messagelink"
+      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+    />
+  );
+
   const email = (
     <a
       href="https://mail.google.com/mail/?view=cm&fs=1&to=yosef9987@gmail.com"
@@ -63,18 +71,23 @@ function SideBar() {
   return (
     <div className="sidebar">
       <div className="over">
-        <h1> יוסף כהן</h1>
+        <div className="titleright">
+          <h2> יוסף כהן</h2>
+          <h4>Full-Stack Developer</h4>
+        </div>
 
-        <h3>Full-Stack Developer</h3>
-        <div className="divflex">
-          058-4112424 &nbsp; &nbsp; {whatsapp} &nbsp; &nbsp; {call}
-        </div>
-        <div className="divflex">
-          yosef9987@gmail.com &nbsp; &nbsp; {email}{" "}
-        </div>
-        <div className="divflex">
-          {download}
-          {github}
+        <div className="titleleft">
+          <div className="divphone">
+            058-4112424 &nbsp; {whatsapp} &nbsp; &nbsp; {call}
+          </div>
+          <div className="divmail">
+            <h5> yosef9987@gmail.com </h5>&nbsp; &nbsp; {email}{" "}
+          </div>
+          <div className="divlinks">
+            {message}
+            {download}
+            {github}
+          </div>
         </div>
       </div>
     </div>

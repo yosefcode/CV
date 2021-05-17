@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./truck-app.css";
-import "../project.css";
+import "../slider.css";
 import GetAppIcon from "@material-ui/icons/GetApp";
 
 import screen1 from "./2.jpg";

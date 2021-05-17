@@ -1,6 +1,6 @@
 import React from "react";
 import "./modal-‏‏truck-app.css";
-import "../project.css";
+import "../slider.css";
 
 import screen1 from "./1.jpg";
 import screen2 from "./2.jpg";

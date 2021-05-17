@@ -1,6 +1,6 @@
 import React from "react";
 import "./shops.css";
-import "../project.css";
+import "../slider.css";
 import imgshops from "./imgshops.png";
 export default () => {
   return (

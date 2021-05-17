@@ -1,8 +1,6 @@
 import "./tabs.css";
 import React, { useState } from "react";
-import Resume from "../resume/resume";
-import About from "../about/about";
-import Project from "../project/project";
+import Project from "../slider/slider";
 
 function TabPanel({ setModal }) {
   const [show, setShow] = useState(0);

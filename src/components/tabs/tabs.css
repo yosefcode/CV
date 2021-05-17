@@ -50,7 +50,7 @@
   .tabs {
     position: absolute;
     width: 98%;
-    top: 65vw;
+    top: 50vw;
     right: 1%;
   }
   .divbtntabs {
@@ -61,11 +61,11 @@
 
   .btntabs {
     background-color: rgb(16, 0, 61, 0);
-    height: 7vw;
+    height: 9vw;
     width: 25%;
     border-radius: 3vw 0;
     margin-right: 0;
-    font-size: 3.2vw;
+    font-size: 4.2vw;
     font-weight: 700;
     position: relative;
     cursor: pointer;

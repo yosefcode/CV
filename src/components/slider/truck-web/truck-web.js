@@ -1,6 +1,6 @@
 import React from "react";
 import "./truck-web.css";
-import "../project.css";
+import "../slider.css";
 
 import imgtruckweb from "./imgtruckweb.png";
 export default () => {

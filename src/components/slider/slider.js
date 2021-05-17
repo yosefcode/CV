@@ -1,13 +1,13 @@
 import React from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import "./project.css";
+import "./slider.css";
 import TruckWeb from "./truck-web/truck-web";
 import GameDouble from "./game-double/game-double";
 import Shops from "./shops/shops";
 import TruckApp from "./truck-app/truck-app";
-import Resume from "../resume/resume";
-import About from "../about/about";
+import Resume from "./resume/resume";
+import About from "./about/about";
 
 export default (props) => {
   const { setModal, setTabproject, setTababout, setTabresume, show } = props;
