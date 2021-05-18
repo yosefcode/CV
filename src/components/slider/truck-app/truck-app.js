@@ -10,7 +10,7 @@ export default ({ setModal }) => {
   const download = (
     <GetAppIcon
       className="download"
-      style={{ fontSize: "3vw" }}
+      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
       onClick={(e) => {
         if (!e) e = window.event;
         e.stopPropagation();

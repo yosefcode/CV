@@ -149,14 +149,6 @@ h5 {
 }
 
 @media only screen and (max-width: 999px) {
-  .project {
-    margin-top: 7%;
-    width: 100%;
-    height: 68vw;
-    /* overflow: auto; */
-    position: relative;
-  }
-
   [class^="number-slide"],
   [class*=" number-slide"] {
     display: flex;
@@ -165,7 +157,7 @@ h5 {
     font-size: 6vw;
     color: #fff;
     font-weight: 500;
-    height: 55vw;
+    height: 155vw;
     max-height: 100vh;
   }
 
@@ -246,13 +238,14 @@ h5 {
 
   .title {
     position: absolute;
-    width: 26%;
-    left: 70%;
-    font-size: 1.4vw;
+    width: 90%;
+    left: 5%;
+    top: 63vw;
+    font-size: 2.8vw;
     padding-top: 1vw;
     color: var(--blue-lite);
     text-align: center;
-    line-height: 2vw;
+    line-height: 4.5vw;
   }
 
   li {
@@ -261,14 +254,15 @@ h5 {
   }
 
   h5 {
-    line-height: 1.4vw;
+    line-height: 4vw;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .imgproject {
     position: absolute;
-    width: 65%;
-    height: 75%;
+    width: 94%;
+    height: 45vw;
     top: 5%;
     left: 3%;
     border-radius: 1vw;
@@ -277,15 +271,16 @@ h5 {
 
   .divlogo {
     position: absolute;
-    width: 70%;
-    top: 85%;
-    left: 3%;
+    width: 90%;
+    top: 55vw;
+    left: 5%;
     text-align: center;
     line-height: 0;
   }
+
   .imglogo {
     /* width: 2.5vw; */
-    height: 4.5vw;
+    height: 6.5vw;
     margin: 0.5vw 1.5vw;
   }
   .divuser {
@@ -293,9 +288,9 @@ h5 {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 86%;
-    left: 80%;
-    font-size: 1vw;
-    line-height: 1.3vw;
+    top: 125vw;
+    left: 10%;
+    font-size: 2.2vw;
+    line-height: 4.3vw;
   }
 }

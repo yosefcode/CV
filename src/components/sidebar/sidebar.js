@@ -81,7 +81,7 @@ function SideBar() {
             058-4112424 &nbsp; {whatsapp} &nbsp; &nbsp; {call}
           </div>
           <div className="divmail">
-            <h5> yosef9987@gmail.com </h5>&nbsp; &nbsp; {email}{" "}
+            {email} &nbsp; &nbsp;<h5> yosef9987@gmail.com </h5>{" "}
           </div>
           <div className="divlinks">
             {message}

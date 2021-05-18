@@ -73,3 +73,82 @@
   background: var(--blue);
   z-index: -1;
 }
+
+@media only screen and (max-width: 999px) {
+  .divabout {
+    position: absolute;
+    width: 58%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    background: var(--blue);
+    border-radius: 2vw;
+    font-size: 3vw;
+    font-weight: 700;
+    padding: 7vw;
+    line-height: 5vw;
+  }
+  .divabout:after {
+    border-radius: 2.5vw;
+    content: "";
+    position: absolute;
+    top: -2.4vw;
+    left: -2.4vw;
+    right: -2.4vw;
+    bottom: -2.4vw;
+    background: var(--blue);
+    z-index: -1;
+  }
+
+  .course {
+    left: 12%;
+    border: var(--purple) 0.8vw solid;
+    color: var(--purple);
+    top: 10vw;
+  }
+
+  .Talents {
+    left: 12%;
+    top: 95vw;
+    border: var(--orange) 0.8vw solid;
+    color: var(--orange);
+  }
+
+  .works {
+    border: var(--yelow) 0.2vw solid;
+    color: var(--yelow);
+    left: 8%;
+    top: 2vw;
+  }
+
+  .about .title {
+    background: var(--blue);
+    border: var(--blue-lite) 0.8vw solid;
+    color: var(--blue-lite);
+    border-radius: 3vw;
+    position: absolute;
+    width: 35%;
+    height: 6vw;
+    top: -4.5vw;
+    right: 4.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 4vw;
+    font-weight: 700;
+    /* z-index: 20; */
+  }
+  .about .title:after {
+    border-radius: 3.5vw;
+    content: "";
+    position: absolute;
+    top: -2.4vw;
+    left: -2.4vw;
+    right: -2.4vw;
+    bottom: -2.4vw;
+    background: var(--blue);
+    z-index: -1;
+  }
+}

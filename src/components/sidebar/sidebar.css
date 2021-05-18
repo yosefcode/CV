@@ -82,7 +82,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 40vw;
+    height: 45vw;
     background-image: url("../../background-image/vaio_hard_edge.png");
     box-shadow: 0 0 4vw var(--blue-text);
     color: var(--blue-text);
@@ -157,19 +157,20 @@
     right: 35%;
   }
   .sidebar .divmail {
+    margin-top: 2vw;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .sidebar .divphone {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
   }
   .sidebar .divlinks {
-    margin-top: 3vw;
+    margin-top: 4vw;
     display: flex;
     align-items: flex-start;
     justify-content: center;
