@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 999px) {
   .truckapp {
-    border: var(--blue-lite) 0.2vw solid;
+    border: var(--blue-lite) 1vw solid;
   }
 
   .truckapp .title {

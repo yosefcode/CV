@@ -221,11 +221,11 @@ h5 {
     margin: 0 auto;
     width: 78%;
     height: 90%;
-    border-radius: 0 6vw;
+    border-radius: 6vw;
   }
 
   .divall:after {
-    border-radius: 0 7vw;
+    border-radius: 7vw;
     content: "";
     position: absolute;
     top: -3.2vw;

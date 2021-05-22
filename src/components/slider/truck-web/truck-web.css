@@ -5,3 +5,13 @@
 .truckweb .title {
   color: var(--purple);
 }
+
+@media only screen and (max-width: 999px) {
+  .truckweb {
+    border: var(--purple) 1vw solid;
+  }
+
+  .truckweb .title {
+    color: var(--purple);
+  }
+}

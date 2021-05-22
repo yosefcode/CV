@@ -5,3 +5,13 @@
 .shops .title {
   color: var(--yelow);
 }
+
+@media only screen and (max-width: 999px) {
+  .shops {
+    border: var(--yelow) 1vw solid;
+  }
+
+  .shops .title {
+    color: var(--yelow);
+  }
+}

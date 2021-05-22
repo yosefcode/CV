@@ -8,12 +8,13 @@ import Message from "../src/components/message/message";
 
 function App() {
   const [modal, setModal] = useState(false);
+  const [modalmessage, setModalmessage] = useState("displaynone");
   return (
     <div className="App" dir="rtl">
-      <Sidebar />
+      <Sidebar setModalmessage={setModalmessage} />
       <Tabs setModal={setModal} />
       {modal && <Modal setModal={setModal} />}
-      <Message />
+      <Message modalmessage={modalmessage} setModalmessage={setModalmessage} />
     </div>
   );
 }

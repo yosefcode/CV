@@ -7,8 +7,11 @@ import mail from "./img/mail.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MessageIcon from "@material-ui/icons/Message";
+import Message from "../message/message";
 
-function SideBar() {
+function SideBar({ setModalmessage }) {
+  const [modal, setModal] = useState(false);
+
   const whatsapp = (
     <img
       className="what"
@@ -45,6 +48,9 @@ function SideBar() {
     <MessageIcon
       className="messagelink"
       style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      onClick={() => {
+        setModalmessage("modalmessage");
+      }}
     />
   );
 
@@ -90,6 +96,7 @@ function SideBar() {
           </div>
         </div>
       </div>
+      {/* {modal && <Message />} */}
     </div>
   );
 }

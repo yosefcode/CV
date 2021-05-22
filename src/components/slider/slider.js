@@ -12,7 +12,7 @@ import About from "./about/about";
 export default (props) => {
   const { setModal, setTabproject, setTababout, setTabresume, show } = props;
   const [pause, setPause] = React.useState(false);
-  const [aa, setaa] = React.useState(false);
+  const [loadrsume, setLoadrsume] = React.useState(false);
   const timer = React.useRef();
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [sliderRef, slider] = useKeenSlider({
@@ -43,16 +43,16 @@ export default (props) => {
     setTabresume("");
     setTababout("");
     setTabproject("active");
-    setaa(false);
+    setLoadrsume(false);
   };
   const aboutactive = () => {
-    setaa(false);
+    setLoadrsume(false);
     setTabresume("");
     setTababout("active");
     setTabproject("");
   };
   const resumeactive = () => {
-    setaa(true);
+    setLoadrsume(true);
     setTabresume("active");
     setTababout("");
     setTabproject("");
@@ -92,7 +92,7 @@ export default (props) => {
             <About />
           </div>
           <div className="keen-slider__slide number-slide">
-            {aa && <Resume />}
+            {loadrsume && <Resume />}
           </div>
         </div>
 

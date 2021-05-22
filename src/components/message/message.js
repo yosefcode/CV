@@ -2,7 +2,7 @@ import "./message.css";
 import axios from "axios";
 import { useState } from "react";
 
-function Message() {
+function Message({ modalmessage, setModalmessage }) {
   let message = {};
   const [modal, setModal] = useState("modal display-none");
 
@@ -12,36 +12,72 @@ function Message() {
     axios.post("/api/message/", message).then((res) => console.log("res.data"));
 
     setModal("modal display-block");
-
     document.getElementById("textarea").innerHTML = "";
-
+    document.getElementById("textareamodal").innerHTML = "";
+    console.log(message);
     setTimeout(function () {
       setModal("modal display-none");
+      setModalmessage("displaynone");
     }, 4000);
   };
 
   return (
-    <div className="message">
-      <div
-        onInput={(e) => (message.message = e.currentTarget.textContent)}
-        id="textarea"
-        className="textarea"
-        contentEditable
-        placeholder=" אשמח לשמוע מכם ... &#x1F60A;"
-      ></div>
+    <div>
+      <div className={"message"}>
+        <div
+          onInput={(e) => (message.message = e.currentTarget.textContent)}
+          id="textarea"
+          className="textarea"
+          contentEditable
+          placeholder=" אשמח לשמוע מכם ... &#x1F60A;"
+        ></div>
 
-      <div
-        className="btnmessage"
-        onClick={() => {
-          sendMessage();
-        }}
-      >
-        שלח
+        <div
+          className="btnmessage"
+          onClick={() => {
+            sendMessage();
+          }}
+        >
+          שלח
+        </div>
+
+        <div className={modal}>ההודעה נשלחה בהצלחה</div>
+        <div style={{ height: "70px" }}></div>
       </div>
 
-      <div className={modal}>ההודעה נשלחה בהצלחה</div>
+      <div
+        className={modalmessage}
+        onClick={() => {
+          setModalmessage("displaynone");
+          // document.getElementById("textareamodal").innerHTML = "";
+        }}
+      >
+        <div
+          className="modalmsg"
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
+          <div
+            onInput={(e) => (message.message = e.currentTarget.textContent)}
+            id="textareamodal"
+            className="textarea"
+            contentEditable
+            placeholder=" אשמח לשמוע מכם ... &#x1F60A;"
+          ></div>
 
-      <div style={{ height: "70px" }}></div>
+          <div
+            className="btnmessage"
+            onClick={() => {
+              sendMessage();
+            }}
+          >
+            שלח
+          </div>
+
+          <div className={modal}>ההודעה נשלחה בהצלחה</div>
+        </div>
+      </div>
     </div>
   );
 }
