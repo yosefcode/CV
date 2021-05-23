@@ -24,8 +24,6 @@ function SideBar() {
         <li>יסודיות.</li>
         <li>סבלנות.</li>
         <li>יכולת למידה עצמית.</li>
-        <li></li>
-        <li></li>
       </div>
       {/* <div className="divabout works">
         <div className="title">נסיון </div>

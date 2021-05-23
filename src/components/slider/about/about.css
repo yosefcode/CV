@@ -84,10 +84,10 @@
     flex-direction: column;
     background: var(--blue);
     border-radius: 2vw;
-    font-size: 3vw;
+    font-size: 3.4vw;
     font-weight: 700;
-    padding: 7vw;
-    line-height: 5vw;
+    padding: 6vw 7vw 4vw;
+    line-height: 7vw;
   }
   .divabout:after {
     border-radius: 2.5vw;
@@ -110,7 +110,7 @@
 
   .Talents {
     left: 12%;
-    top: 95vw;
+    top: 110vw;
     border: var(--orange) 0.8vw solid;
     color: var(--orange);
   }
