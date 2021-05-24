@@ -14,11 +14,10 @@ function Message({ modalmessage, setModalmessage }) {
     setModal("modal display-block");
     document.getElementById("textarea").innerHTML = "";
     document.getElementById("textareamodal").innerHTML = "";
-    console.log(message);
     setTimeout(function () {
       setModal("modal display-none");
       setModalmessage("displaynone");
-    }, 4000);
+    }, 2000);
   };
 
   return (

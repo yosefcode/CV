@@ -73,6 +73,47 @@
   display: none;
 }
 
+.speech-bubble {
+  position: absolute;
+  top: 11vw;
+  left: 6vw;
+  margin: 0.5em auto;
+  padding: 1vw;
+  width: 10vw;
+  height: 5vw;
+  border-radius: 0.25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  font-size: 1vw !important;
+  text-align: center;
+  line-height: normal;
+}
+.speech-bubble:before,
+.speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+.speech-bubble:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
+  background: #f4fbfe;
+}
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid 0.25em #629bdd;
+  bottom: 0.25em;
+  left: 1.25em;
+  width: 0;
+  height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}
+
 @media only screen and (max-width: 999px) {
   .sidebar {
     position: absolute;
@@ -174,5 +215,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+  }
+  .speech-bubble {
+    display: none;
   }
 }

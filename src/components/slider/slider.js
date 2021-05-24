@@ -21,7 +21,7 @@ export default (props) => {
       setCurrentSlide(s.details().relativeSlide);
     },
     loop: true,
-    duration: 3000,
+    duration: 2000,
     dragStart: () => {
       setPause(true);
     },
@@ -71,6 +71,17 @@ export default (props) => {
       slider && slider.moveToSlideRelative(show);
     }
   }, [show]);
+
+  // React.useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     if (!pause && slider) {
+  //       slider.next();
+  //     }
+  //   }, 10000);
+  //   return () => {
+  //     clearInterval(timer.current);
+  //   };
+  // }, [pause, slider]);
 
   return (
     <div className="project">

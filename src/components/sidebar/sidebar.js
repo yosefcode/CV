@@ -11,6 +11,7 @@ import Message from "../message/message";
 
 function SideBar({ setModalmessage }) {
   const [modal, setModal] = useState(false);
+  const [isShown, setIsShown] = useState(false);
 
   const whatsapp = (
     <img
@@ -38,6 +39,8 @@ function SideBar({ setModalmessage }) {
   const download = (
     <a href="CV.pdf" download="קורות חיים - יוסף כהן" title="קורות חיים pdf">
       <GetAppIcon
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
         className="download"
         style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
       />
@@ -93,10 +96,15 @@ function SideBar({ setModalmessage }) {
             {message}
             {download}
             {github}
+            {isShown && (
+              <div className="speech-bubble">
+                רוצה להוריד את קובץ קורות החיים?
+                <br /> זה פחות יפה מפה...
+              </div>
+            )}
           </div>
         </div>
       </div>
-      {/* {modal && <Message />} */}
     </div>
   );
 }

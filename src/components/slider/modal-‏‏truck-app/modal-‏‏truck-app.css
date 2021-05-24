@@ -44,10 +44,8 @@
   .modaltruckapp .modalimg {
     position: absolute;
     border-radius: 1vw;
-    filter: drop-shadow(0 0 0.6vw rgb(0, 0, 0));
-    /* width: 700vw; */
-    height: 60%;
-    padding: 1vw;
+    filter: drop-shadow(0 0 1.6vw rgb(0, 0, 0));
+    height: 70%;
     z-index: 5;
     background-color: transparent;
     top: 50%;
@@ -61,9 +59,9 @@
   }
 
   .modaltruckapp .imgapp {
-    width: 95vw;
-    height: 90%;
+    width: 100vw;
+    height: 95%;
     border-radius: 3vw;
-    margin: 10vw;
+    margin: 0 10vw;
   }
 }
