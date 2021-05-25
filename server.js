@@ -55,3 +55,5 @@ app.post("/api/message/", function (req, res) {
 });
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+
+// "proxy": "http://localhost:4200",
