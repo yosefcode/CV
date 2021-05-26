@@ -75,7 +75,7 @@ const Slider = (props) => {
       if (!pause && slider) {
         slider.next();
       }
-    }, 10000);
+    }, 15000);
     return () => {
       clearInterval(timer.current);
     };

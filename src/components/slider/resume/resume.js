@@ -17,7 +17,7 @@ function Resume() {
       </div>
       <div className="divresume  React">React</div>
       <div className="divresume  Ntive">
-        <p>React-Native</p>
+        <p>React Native</p>
       </div>
       <div className="divresume  JavaScript">JavaScript</div>
       <div className="divresume  HTML">HTML</div>
