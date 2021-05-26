@@ -5,12 +5,15 @@ import { useState } from "react";
 function Message({ modalmessage, setModalmessage }) {
   let message = {};
   const [modal, setModal] = useState("modal display-none");
-
-  const msgmodal = message === "" ? "לא כתבת כלום" : "ההודעה נשלחה בהצלחה";
+  const [msgmodal, setMsgmodal] = useState();
 
   const sendMessage = () => {
     axios.post("/api/message/", message).then((res) => console.log("res.data"));
-
+    setMsgmodal(
+      !message.message
+        ? "לא כתבת כלום  \ud83d\ude14"
+        : "ההודעה נשלחה בהצלחה  \ud83d\ude00"
+    );
     setModal("modal display-block");
     document.getElementById("textarea").innerHTML = "";
     document.getElementById("textareamodal").innerHTML = "";
@@ -40,7 +43,8 @@ function Message({ modalmessage, setModalmessage }) {
           שלח
         </div>
 
-        <div className={modal}>ההודעה נשלחה בהצלחה</div>
+        <div className={modal}>{msgmodal}</div>
+        {/* <div className={modal}>ההודעה נשלחה בהצלחה</div> */}
         <div style={{ height: "70px" }}></div>
       </div>
 
@@ -74,7 +78,7 @@ function Message({ modalmessage, setModalmessage }) {
             שלח
           </div>
 
-          <div className={modal}>ההודעה נשלחה בהצלחה</div>
+          <div className={modal}>{msgmodal}</div>
         </div>
       </div>
     </div>

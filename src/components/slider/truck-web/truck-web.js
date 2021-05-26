@@ -3,7 +3,8 @@ import "./truck-web.css";
 import "../slider.css";
 
 import imgtruckweb from "./imgtruckweb.png";
-export default () => {
+
+const TruckWeb = () => {
   return (
     <div
       className="divall truckweb"
@@ -32,13 +33,14 @@ export default () => {
         <li>PASSWORD - 1</li>
       </div>
 
-      <img className="imgproject" src={imgtruckweb} />
+      <img className="imgproject" src={imgtruckweb} alt="" />
 
       <div className="divlogo">
-        <img className="imglogo" src={"js.png"} />
-        <img className="imglogo" src={"css.png"} />
-        <img className="imglogo" src={"react.png"} />
+        <img className="imglogo" src={"js.png"} alt="" />
+        <img className="imglogo" src={"css.png"} alt="" />
+        <img className="imglogo" src={"react.png"} alt="" />
       </div>
     </div>
   );
 };
+export default TruckWeb;

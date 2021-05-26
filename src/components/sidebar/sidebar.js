@@ -1,16 +1,13 @@
 import { useState } from "react";
 import "./sidebar.css";
 import what from "./img/WhatsApp.png";
-import git from "./img/git.png";
 import phone from "./img/phone.png";
 import mail from "./img/mail.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MessageIcon from "@material-ui/icons/Message";
-import Message from "../message/message";
 
 function SideBar({ setModalmessage }) {
-  const [modal, setModal] = useState(false);
   const [isShown, setIsShown] = useState(false);
 
   const whatsapp = (
@@ -47,6 +44,42 @@ function SideBar({ setModalmessage }) {
     </a>
   );
 
+  const downloadSmallScreen = (
+    <GetAppIcon
+      onClick={() => {
+        setIsShown(true);
+      }}
+      className="downloadsmallscreen"
+      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+    />
+  );
+
+  const yesDownload = (
+    <a
+      href="CV.pdf"
+      download="קורות חיים - יוסף כהן"
+      title="קורות חיים pdf"
+      className="btnmodal yes"
+      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      onClick={() => {
+        setIsShown(false);
+      }}
+    >
+      &#10004;
+    </a>
+  );
+
+  const noDownload = (
+    <button
+      onClick={() => {
+        setIsShown(false);
+      }}
+      className="btnmodal no"
+    >
+      &#10006;
+    </button>
+  );
+
   const message = (
     <MessageIcon
       className="messagelink"
@@ -61,6 +94,7 @@ function SideBar({ setModalmessage }) {
     <a
       href="https://mail.google.com/mail/?view=cm&fs=1&to=yosef9987@gmail.com"
       target="_blank"
+      rel="noreferrer"
     >
       <img className="mail" src={mail} alt="תמונה חסרה" />
     </a>
@@ -95,11 +129,15 @@ function SideBar({ setModalmessage }) {
           <div className="divlinks">
             {message}
             {download}
+            {downloadSmallScreen}
             {github}
             {isShown && (
               <div className="speech-bubble">
                 רוצה להוריד את קובץ קורות החיים?
-                <br /> זה פחות יפה מפה...
+                <br /> זה פחות יפה שמה <h2>&#x1f609;</h2>
+                <div className="divbtnmodal">
+                  {yesDownload} {noDownload}
+                </div>
               </div>
             )}
           </div>

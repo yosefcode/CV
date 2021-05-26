@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./truck-app.css";
 import "../slider.css";
 import GetAppIcon from "@material-ui/icons/GetApp";
@@ -6,7 +6,7 @@ import GetAppIcon from "@material-ui/icons/GetApp";
 import screen1 from "./2.jpg";
 import screen2 from "./5.jpg";
 
-export default ({ setModal }) => {
+const TruckApp = ({ setModal }) => {
   const download = (
     <GetAppIcon
       className="download"
@@ -49,15 +49,16 @@ export default ({ setModal }) => {
       </div>
       {download}
 
-      <img className="img1 imgapp" src={screen1} />
-      <img className="img2 imgapp" src={screen2} />
+      <img className="img1 imgapp" src={screen1} alt="" />
+      <img className="img2 imgapp" src={screen2} alt="" />
 
       <div className="divlogo">
-        <img className="imglogo" src={"js.png"} />
-        <img className="imglogo" src={"css.png"} />
-        {/* <img className="imglogo" src={"react.png"} /> */}
-        <img className="imglogo" src={"native.png"} />
+        <img className="imglogo" src={"js.png"} alt="" />
+        <img className="imglogo" src={"css.png"} alt="" />
+        {/* <img className="imglogo" src={"react.png"} alt=""/> */}
+        <img className="imglogo" src={"native.png"} alt="" />
       </div>
     </div>
   );
 };
+export default TruckApp;

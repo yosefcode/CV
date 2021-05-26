@@ -1,9 +1,8 @@
-import { useState } from "react";
 // import "./resume.css";
 import "./resumetetris.css";
 // import "./resumespiral.css";
 
-function SideBar() {
+function Resume() {
   return (
     <div className="resume">
       <div className="divresume  Socket">Socket.io</div>
@@ -26,4 +25,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default Resume;

@@ -1,9 +1,9 @@
 import React from "react";
 import "./game-double.css";
 import "../slider.css";
-
 import gamedouble from "./game-double.png";
-export default () => {
+
+const Gamedouble = () => {
   return (
     <div
       className="divall gamedouble"
@@ -23,13 +23,14 @@ export default () => {
         <li>צלילים</li>
       </div>
 
-      <img className="imgproject" src={gamedouble} />
+      <img className="imgproject" src={gamedouble} alt="" />
 
       <div className="divlogo">
-        <img className="imglogo" src={"js.png"} />
-        <img className="imglogo" src={"css.png"} />
-        <img className="imglogo" src={"react.png"} />
+        <img className="imglogo" src={"js.png"} alt="" />
+        <img className="imglogo" src={"css.png"} alt="" />
+        <img className="imglogo" src={"react.png"} alt="" />
       </div>
     </div>
   );
 };
+export default Gamedouble;

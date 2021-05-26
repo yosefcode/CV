@@ -9,7 +9,7 @@ import TruckApp from "./truck-app/truck-app";
 import Resume from "./resume/resume";
 import About from "./about/about";
 
-export default (props) => {
+const Slider = (props) => {
   const { setModal, setTabproject, setTababout, setTabresume, show } = props;
   const [pause, setPause] = React.useState(false);
   const [loadrsume, setLoadrsume] = React.useState(false);
@@ -39,12 +39,6 @@ export default (props) => {
     });
   }, [sliderRef]);
 
-  const projectactive = () => {
-    setTabresume("");
-    setTababout("");
-    setTabproject("active");
-    setLoadrsume(false);
-  };
   const aboutactive = () => {
     setLoadrsume(false);
     setTabresume("");
@@ -57,6 +51,12 @@ export default (props) => {
     setTababout("");
     setTabproject("");
   };
+  const projectactive = () => {
+    setTabresume("");
+    setTababout("");
+    setTabproject("active");
+    setLoadrsume(false);
+  };
 
   React.useEffect(() => {
     currentSlide === 5
@@ -67,21 +67,19 @@ export default (props) => {
   }, [currentSlide]);
 
   React.useEffect(() => {
-    {
-      slider && slider.moveToSlideRelative(show);
-    }
+    slider && slider.moveToSlideRelative(show);
   }, [show]);
 
-  // React.useEffect(() => {
-  //   timer.current = setInterval(() => {
-  //     if (!pause && slider) {
-  //       slider.next();
-  //     }
-  //   }, 10000);
-  //   return () => {
-  //     clearInterval(timer.current);
-  //   };
-  // }, [pause, slider]);
+  React.useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next();
+      }
+    }, 10000);
+    return () => {
+      clearInterval(timer.current);
+    };
+  }, [pause, slider]);
 
   return (
     <div className="project">
@@ -166,3 +164,4 @@ function ArrowRight(props) {
     </svg>
   );
 }
+export default Slider;

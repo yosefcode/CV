@@ -9,7 +9,7 @@ import screen4 from "./4.jpg";
 import screen5 from "./5.jpg";
 import screen6 from "./6.jpg";
 
-export default ({ setModal }) => {
+const ModalTruckApp = ({ setModal }) => {
   return (
     <div
       className="modaltruckapp"
@@ -23,13 +23,14 @@ export default ({ setModal }) => {
           e.stopPropagation();
         }}
       >
-        <img className="img1 imgapp" src={screen1} />
-        <img className="img1 imgapp" src={screen2} />
-        <img className="img1 imgapp" src={screen3} />
-        <img className="img1 imgapp" src={screen4} />
-        <img className="img1 imgapp" src={screen5} />
-        <img className="img2 imgapp" src={screen6} />
+        <img className="img1 imgapp" src={screen1} alt="" />
+        <img className="img1 imgapp" src={screen2} alt="" />
+        <img className="img1 imgapp" src={screen3} alt="" />
+        <img className="img1 imgapp" src={screen4} alt="" />
+        <img className="img1 imgapp" src={screen5} alt="" />
+        <img className="img2 imgapp" src={screen6} alt="" />
       </div>
     </div>
   );
 };
+export default ModalTruckApp;

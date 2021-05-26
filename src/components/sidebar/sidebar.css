@@ -40,6 +40,13 @@
   margin: 0 1vw;
   font-size: 3vw;
 }
+.sidebar .downloadsmallscreen {
+  display: none;
+}
+.sidebar .divbtnmodal {
+  display: none;
+}
+
 .sidebar .mail {
   cursor: pointer;
   width: 2.2vw;
@@ -79,7 +86,7 @@
   left: 6vw;
   margin: 0.5em auto;
   padding: 1vw;
-  width: 10vw;
+  width: 11vw;
   height: 5vw;
   border-radius: 0.25em;
   transform: rotate(-4deg) rotateY(15deg);
@@ -113,7 +120,9 @@
   height: 1em;
   transform: rotate(45deg) skewX(75deg);
 }
-
+h2 {
+  display: inline;
+}
 @media only screen and (max-width: 999px) {
   .sidebar {
     position: absolute;
@@ -167,13 +176,17 @@
   }
 
   .sidebar .download {
-    border: var(--blue-text) 0.3vw solid;
+    display: none;
+  }
+  .sidebar .downloadsmallscreen {
+    display: inline;
+    border: var(--blue-text) 1vw solid;
     color: var(--blue-text);
     border-radius: 50px;
     padding: 0.1vw;
     cursor: pointer;
     /* margin: 1vw 5vw; */
-    font-size: 9vw;
+    font-size: 8.5vw;
   }
   .sidebar .mail {
     cursor: pointer;
@@ -217,6 +230,63 @@
     justify-content: center;
   }
   .speech-bubble {
-    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 42vw;
+    left: 22vw;
+    margin: 0.5em auto;
+    padding: 2vw 0vw 1vw 4vw;
+    width: 55vw;
+    height: 37vw;
+    border-radius: 3vw;
+    transform: rotate(-4deg) rotateY(15deg);
+    background: #629bdd;
+    font-size: 4vw !important;
+    text-align: center;
+    line-height: normal;
+  }
+  .speech-bubble:before,
+  .speech-bubble:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+  }
+  .speech-bubble:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    transform: rotate(2deg) translate(0.85em, -0.75em) scale(1.02);
+    background: #f4fbfe;
+  }
+  .speech-bubble:before {
+    border: solid 0 transparent;
+    border-right: solid 20vw #f4fbfe;
+    border-left: solid 3vw #629bdd;
+    top: 1vw;
+    left: 14vw;
+    width: 0;
+    height: 1em;
+    transform: rotate(45deg) skewX(75deg);
+  }
+  .sidebar .divbtnmodal {
+    margin: 2vw auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .sidebar .btnmodal {
+    background-color: transparent;
+    font-size: 9vw;
+    border: none;
+    font-weight: 900;
+  }
+  .yes {
+    color: green;
+    text-decoration: none;
+  }
+  .no {
+    color: red;
   }
 }
