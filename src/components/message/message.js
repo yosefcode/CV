@@ -52,6 +52,7 @@ function Message({ modalmessage, setModalmessage }) {
         </div>
 
         <div className={modal}>{msgmodal}</div>
+
         <div style={{ height: "70px" }}></div>
       </div>
 

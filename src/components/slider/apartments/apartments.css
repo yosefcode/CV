@@ -1,0 +1,17 @@
+.apartments {
+  border: var(--purple) 0.2vw solid;
+}
+
+.apartments .title {
+  color: var(--purple);
+}
+
+@media only screen and (max-width: 999px) {
+  .apartments {
+    border: var(--purple) 1vw solid;
+  }
+
+  .apartments .title {
+    color: var(--purple);
+  }
+}

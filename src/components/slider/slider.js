@@ -6,6 +6,7 @@ import TruckWeb from "./truck-web/truck-web";
 import GameDouble from "./game-double/game-double";
 import Shops from "./shops/shops";
 import TruckApp from "./truck-app/truck-app";
+import Apartments from "./apartments/apartments";
 import Resume from "./resume/resume";
 import About from "./about/about";
 
@@ -21,7 +22,7 @@ const Slider = (props) => {
       setCurrentSlide(s.details().relativeSlide);
     },
     loop: true,
-    duration: 2000,
+    duration: 4000,
     dragStart: () => {
       setPause(true);
     },
@@ -59,9 +60,9 @@ const Slider = (props) => {
   };
 
   React.useEffect(() => {
-    currentSlide === 5
+    currentSlide === 6
       ? resumeactive()
-      : currentSlide === 4
+      : currentSlide === 5
       ? aboutactive()
       : projectactive();
   }, [currentSlide]);
@@ -85,6 +86,9 @@ const Slider = (props) => {
     <div className="project">
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider" dir="ltr">
+          <div className="keen-slider__slide number-slide">
+            <Apartments />
+          </div>
           <div className="keen-slider__slide number-slide">
             <GameDouble />
           </div>
