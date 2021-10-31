@@ -16,13 +16,18 @@ const Shops = () => {
         <h3> Front-End + Back-End</h3>
         אתר דירות נופש לציבור החרדי
         <br />
-        <br />
         <li>קבלת המאגר משרת</li>
         <li>פילטור לפי פרמטרים</li>
         <li>שליחת הודעות</li>
         <li>מפות</li>
-        <br />
+        <li>Login - Firebase</li>
+        <li>איזור אישי</li>
+        <li>ניהול - CRUD</li>
         <h3>האתר עדיין בבנייה</h3>
+      </div>
+      <div className="divuser title">
+        <li>USER - aaa@gmail.com </li>
+        <li>PASSWORD - 123456</li>
       </div>
 
       <img className="imgproject" src={imgapartments} alt="" />
@@ -33,6 +38,7 @@ const Shops = () => {
         <img className="imglogo" src={"react.png"} alt="" />
         <img className="imglogo" src={"node.jpg"} alt="" />
         <img className="imglogo" src={"mongoo.png"} alt="" />
+        <img className="imglogo" src={"Firebase.png"} alt="" />
       </div>
     </div>
   );

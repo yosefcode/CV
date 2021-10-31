@@ -5,7 +5,7 @@ import "./resumetetris.css";
 function Resume() {
   return (
     <div className="resume">
-      <div className="divresume  Socket">Socket.io</div>
+      <div className="divresume  Socket">Firebase</div>
       <div className="divresume  Heroku">Heroku</div>
       <div className="divresume  Express">
         <p>Express</p>

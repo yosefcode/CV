@@ -12,10 +12,10 @@ function TabPanel({ setModal }) {
     setShow(0);
   };
   const showAbout = () => {
-    setShow(4);
+    setShow(5);
   };
   const showResume = () => {
-    setShow(5);
+    setShow(6);
   };
 
   return (
