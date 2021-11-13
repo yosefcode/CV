@@ -351,7 +351,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 700px) {
   .resume {
     margin: 4vw auto;
     position: relative;

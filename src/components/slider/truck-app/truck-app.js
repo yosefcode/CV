@@ -10,7 +10,7 @@ const TruckApp = ({ setModal }) => {
   const download = (
     <GetAppIcon
       className="download"
-      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      style={{ fontSize: "3vw @media only screen and (max-width: 700px)" }}
       onClick={(e) => {
         if (!e) e = window.event;
         e.stopPropagation();

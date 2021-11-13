@@ -123,7 +123,7 @@
 h2 {
   display: inline;
 }
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 700px) {
   .sidebar {
     position: absolute;
     text-align: center;

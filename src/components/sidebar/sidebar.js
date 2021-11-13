@@ -25,7 +25,7 @@ function SideBar({ setModalmessage }) {
     <GitHubIcon
       className="git"
       style={{
-        fontSize: "3.5vw @media only screen and (max-width: 999px) ",
+        fontSize: "3.5vw @media only screen and (max-width: 700px) ",
       }}
       onClick={() => {
         window.open("https://github.com/yosefcode");
@@ -39,7 +39,7 @@ function SideBar({ setModalmessage }) {
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
         className="download"
-        style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+        style={{ fontSize: "3vw @media only screen and (max-width: 700px)" }}
       />
     </a>
   );
@@ -50,7 +50,7 @@ function SideBar({ setModalmessage }) {
         setIsShown(true);
       }}
       className="downloadsmallscreen"
-      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      style={{ fontSize: "3vw @media only screen and (max-width: 700px)" }}
     />
   );
 
@@ -60,7 +60,7 @@ function SideBar({ setModalmessage }) {
       download="קורות חיים - יוסף כהן"
       title="קורות חיים pdf"
       className="btnmodal yes"
-      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      style={{ fontSize: "3vw @media only screen and (max-width: 700px)" }}
       onClick={() => {
         setIsShown(false);
       }}
@@ -83,7 +83,7 @@ function SideBar({ setModalmessage }) {
   const message = (
     <MessageIcon
       className="messagelink"
-      style={{ fontSize: "3vw @media only screen and (max-width: 999px)" }}
+      style={{ fontSize: "3vw @media only screen and (max-width: 700px)" }}
       onClick={() => {
         setModalmessage("modalmessage");
       }}
