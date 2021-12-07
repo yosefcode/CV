@@ -1,5 +1,6 @@
 .gamedouble {
   border: var(--yelow) 0.2vw solid;
+  cursor: auto;
 }
 
 .gamedouble .title {
