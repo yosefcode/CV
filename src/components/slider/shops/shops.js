@@ -8,7 +8,7 @@ const Shops = () => {
     <div
       className="divall shops"
       onClick={() => {
-        window.open("https://shop-full.herokuapp.com/");
+        window.open("https://shop-heroko.vercel.app/");
       }}
     >
       <div className="title" dir="rtl">

@@ -8,7 +8,7 @@ const Shops = () => {
     <div
       className="divall apartments"
       onClick={() => {
-        window.open("https://apartments-yc.herokuapp.com/");
+        window.open("https://www.datshe.co.il/");
       }}
     >
       <div className="title" dir="rtl">
