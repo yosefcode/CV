@@ -34,7 +34,6 @@
     "eject": "react-scripts eject",
     "start-dev": "nodemon server.js",
     "heroku-postbuild": "npm i && npm run build"
-
   },
   "proxy": "http://localhost:4200",
   "eslintConfig": {
