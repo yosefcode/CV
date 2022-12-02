@@ -14,12 +14,12 @@ app.use(bodyParser.json());
 const dotenv = require("dotenv");
 
 dotenv.config();
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "/build")));
 
 const PORT = process.env.PORT || 4200;
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "/build", "index.html"));
 });
 
 let transporter = nodemailer.createTransport(
