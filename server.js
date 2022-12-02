@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 const dotenv = require("dotenv");
 
 dotenv.config();
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "/build")));
 
 const PORT = process.env.PORT || 4200;
 
