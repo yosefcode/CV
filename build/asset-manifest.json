@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b23c6738.chunk.css",
-    "main.js": "/static/js/main.d7ef29c5.chunk.js",
-    "main.js.map": "/static/js/main.d7ef29c5.chunk.js.map",
+    "main.js": "/static/js/main.c75452ff.chunk.js",
+    "main.js.map": "/static/js/main.c75452ff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.23df54ba.js",
     "runtime-main.js.map": "/static/js/runtime-main.23df54ba.js.map",
     "static/css/2.bded3b46.chunk.css": "/static/css/2.bded3b46.chunk.css",
@@ -22,7 +22,7 @@
     "static/media/6.9ed3b2d4.jpg": "/static/media/6.9ed3b2d4.jpg",
     "static/media/WhatsApp.c5320490.png": "/static/media/WhatsApp.c5320490.png",
     "static/media/game-double.8da29ff2.png": "/static/media/game-double.8da29ff2.png",
-    "static/media/imgapartments.ac406003.png": "/static/media/imgapartments.ac406003.png",
+    "static/media/imgapartments.5116ca3c.png": "/static/media/imgapartments.5116ca3c.png",
     "static/media/imgshops.58ed915b.png": "/static/media/imgshops.58ed915b.png",
     "static/media/imgtruckweb.39013cb9.png": "/static/media/imgtruckweb.39013cb9.png",
     "static/media/index.css": "/static/media/old_map.71e7cfb7.png",
@@ -33,6 +33,6 @@
     "static/css/2.bded3b46.chunk.css",
     "static/js/2.3733c58b.chunk.js",
     "static/css/main.b23c6738.chunk.css",
-    "static/js/main.d7ef29c5.chunk.js"
+    "static/js/main.c75452ff.chunk.js"
   ]
 }
