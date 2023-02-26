@@ -11,7 +11,8 @@ import Resume from "./resume/resume";
 import About from "./about/about";
 
 const Slider = (props) => {
-  const { setModal, setTabproject, setTababout, setTabresume, show } = props;
+  const { setModal, setTabproject, setTababout, setTabresume, show, setShow } =
+    props;
   const [pause, setPause] = React.useState(false);
   const [loadrsume, setLoadrsume] = React.useState(false);
   const timer = React.useRef();
@@ -62,47 +63,54 @@ const Slider = (props) => {
   React.useEffect(() => {
     currentSlide === 6
       ? resumeactive()
-      : currentSlide === 5
+      : currentSlide === 0
       ? aboutactive()
       : projectactive();
   }, [currentSlide]);
 
+  // React.useEffect(() => {
+  //   slider && slider.moveToSlideRelative(currentSlide);
+  //   // slider && slider.moveToSlideRelative(show);
+  // }, [currentSlide, slider]);
   React.useEffect(() => {
+    // setCurrentSlide(show);
+    // slider && slider.moveToSlideRelative(currentSlide);
     slider && slider.moveToSlideRelative(show);
-  }, [show]);
+  }, [show, slider]);
+  console.log(show);
 
-  React.useEffect(() => {
-    timer.current = setInterval(() => {
-      if (!pause && slider) {
-        slider.next();
-      }
-    }, 15000);
-    return () => {
-      clearInterval(timer.current);
-    };
-  }, [pause, slider]);
+  // React.useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     if (!pause && slider) {
+  //       slider.next();
+  //     }
+  //   }, 15000);
+  //   return () => {
+  //     clearInterval(timer.current);
+  //   };
+  // }, [pause, slider]);
 
   return (
     <div className="project">
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider" dir="ltr">
           <div className="keen-slider__slide number-slide">
+            <About setShow={setShow} />
+          </div>
+          <div className="keen-slider__slide number-slide">
             <Apartments />
-          </div>
-          <div className="keen-slider__slide number-slide">
-            <GameDouble />
-          </div>
-          <div className="keen-slider__slide number-slide">
-            <TruckWeb />
           </div>
           <div className="keen-slider__slide number-slide">
             <TruckApp setModal={setModal} />
           </div>
           <div className="keen-slider__slide number-slide">
-            <Shops />
+            <TruckWeb />
           </div>
           <div className="keen-slider__slide number-slide">
-            <About />
+            <GameDouble />
+          </div>
+          <div className="keen-slider__slide number-slide">
+            <Shops />
           </div>
           <div className="keen-slider__slide number-slide">
             {loadrsume && <Resume />}
@@ -112,11 +120,17 @@ const Slider = (props) => {
         {slider && (
           <>
             <ArrowLeft
-              onClick={(e) => e.stopPropagation() || slider.prev()}
+              onClick={(e) => {
+                e.stopPropagation() || slider.prev();
+                setShow(currentSlide - 1);
+              }}
               disabled={currentSlide === 0}
             />
             <ArrowRight
-              onClick={(e) => e.stopPropagation() || slider.next()}
+              onClick={(e) => {
+                e.stopPropagation() || slider.next();
+                setShow(currentSlide + 1);
+              }}
               disabled={currentSlide === slider.details().size - 1}
             />
           </>
@@ -130,6 +144,7 @@ const Slider = (props) => {
                 key={idx}
                 onClick={() => {
                   slider.moveToSlideRelative(idx);
+                  setShow(idx);
                 }}
                 className={"dot" + (currentSlide === idx ? " active" : "")}
               />

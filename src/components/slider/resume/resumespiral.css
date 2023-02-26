@@ -25,6 +25,7 @@
   animation: Socket 2s both;
   animation-delay: 0.5s;
 }
+
 .Socket:after {
   background-color: var(--blue);
   width: 5vw;
@@ -42,42 +43,52 @@
     top: 10vw;
     left: 1vw;
   }
+
   10% {
     top: 20vw;
     left: 22vw;
   }
+
   20% {
     top: 30vw;
     left: 7vw;
   }
+
   30% {
     top: 25vw;
     left: 10vw;
   }
+
   40% {
     top: 10vw;
     left: 18vw;
   }
+
   50% {
     top: 22vw;
     left: 8vw;
   }
+
   60% {
     top: 10vw;
     left: 18vw;
   }
+
   70% {
     top: 30vw;
     left: 27vw;
   }
+
   80% {
     top: 17vw;
     left: 3vw;
   }
+
   90% {
     top: 25vw;
     left: 22vw;
   }
+
   100% {
     top: 30vw;
     left: 15vw;
@@ -95,6 +106,7 @@
   animation: Express 2s both;
   animation-delay: 0.5s;
 }
+
 .Express:after {
   background-color: var(--blue);
   width: 5vw;
@@ -106,50 +118,62 @@
   border: yellow solid;
   border-width: 0.4vw 0 0.4vw 0.4vw;
 }
-p {
+
+.rotate {
   transform: rotate(270deg);
 }
+
 @keyframes Express {
   0% {
     top: 10vw;
     left: 1vw;
   }
+
   10% {
     top: 30vw;
     left: 27vw;
   }
+
   20% {
     top: 10vw;
     left: 18vw;
   }
+
   30% {
     top: 30vw;
     left: 7vw;
   }
+
   40% {
     top: 10vw;
     left: 18vw;
   }
+
   50% {
     top: 25vw;
     left: 22vw;
   }
+
   60% {
     top: 17vw;
     left: 3vw;
   }
+
   70% {
     top: 22vw;
     left: 8vw;
   }
+
   80% {
     top: 25vw;
     left: 10vw;
   }
+
   90% {
     top: 20vw;
     left: 22vw;
   }
+
   100% {
     left: 47.8vw;
     top: 18.9vw;
@@ -167,6 +191,7 @@ p {
   animation: Heroku 1s both;
   animation-delay: 1.1s;
 }
+
 .Heroku:after {
   background-color: var(--blue);
   width: 5.5vw;
@@ -178,6 +203,7 @@ p {
   border: rgb(99, 40, 196) solid;
   border-width: 0 0.4vw 0.4vw 0.4vw;
 }
+
 .Heroku:before {
   background-color: var(--blue);
   width: 4.8vw;
@@ -189,10 +215,12 @@ p {
   border: rgb(99, 40, 196) solid;
   border-width: 0.4vw 0.4vw 0 0.4vw;
 }
+
 @keyframes Heroku {
   from {
     top: -20vw;
   }
+
   to {
     top: 24.6vw;
   }
@@ -208,6 +236,7 @@ p {
   animation: CSS 1s both;
   animation-delay: 1.4s;
 }
+
 .CSS:after {
   background-color: var(--blue);
   width: 4.6vw;
@@ -219,6 +248,7 @@ p {
   border: rgb(33, 128, 218) solid;
   border-width: 0.4vw 0 0 0.4vw;
 }
+
 .CSS:before {
   background-color: var(--blue);
   width: 6.2vw;
@@ -230,10 +260,12 @@ p {
   border: rgb(33, 128, 218) solid;
   border-width: 0.4vw 0.4vw 0.4vw 0;
 }
+
 @keyframes CSS {
   from {
     top: -20vw;
   }
+
   to {
     top: 30vw;
   }
@@ -250,6 +282,7 @@ p {
   animation: MongoDB 1s both;
   animation-delay: 1.7s;
 }
+
 .MongoDB:after {
   background-color: var(--blue);
   width: 4.8vw;
@@ -261,6 +294,7 @@ p {
   border: rgb(213, 124, 235) solid;
   border-width: 0.4vw 0.4vw 0 0;
 }
+
 .MongoDB:before {
   background-color: var(--blue);
   width: 6vw;
@@ -272,10 +306,12 @@ p {
   border: rgb(213, 124, 235) solid;
   border-width: 0.4vw 0 0.4vw 0.4vw;
 }
+
 @keyframes MongoDB {
   from {
     top: -20vw;
   }
+
   to {
     top: 24.45vw;
   }
@@ -292,10 +328,12 @@ p {
   animation: React 1s both;
   animation-delay: 2s;
 }
+
 @keyframes React {
   from {
     top: -20vw;
   }
+
   to {
     top: 13.3vw;
   }
@@ -312,6 +350,7 @@ p {
   animation: Node 1s both;
   animation-delay: 2.3s;
 }
+
 .Node:after {
   background-color: var(--blue);
   width: 5vw;
@@ -323,10 +362,12 @@ p {
   border: rgb(126, 0, 73) solid;
   border-width: 0.4vw 0 0.4vw 0.4vw;
 }
+
 @keyframes Node {
   from {
     top: -20vw;
   }
+
   to {
     top: 8.65vw;
   }
@@ -343,6 +384,7 @@ p {
   animation: Ntive 1s both;
   animation-delay: 2.6s;
 }
+
 .Ntive:after {
   background-color: var(--blue);
   width: 5.6vw;
@@ -354,10 +396,12 @@ p {
   border: rgb(114, 209, 212) solid;
   border-width: 0.4vw 0.4vw 0.4vw 0;
 }
+
 @keyframes Ntive {
   from {
     top: -20vw;
   }
+
   to {
     top: 8.8vw;
   }
@@ -374,6 +418,7 @@ p {
   animation: JavaScript 1s both;
   animation-delay: 2.9s;
 }
+
 .JavaScript:after {
   background-color: var(--blue);
   width: 5.6vw;
@@ -385,10 +430,12 @@ p {
   border: chartreuse solid;
   border-width: 0 0.4vw 0.4vw 0.4vw;
 }
+
 @keyframes JavaScript {
   from {
     top: -20vw;
   }
+
   to {
     top: 8.75vw;
   }
@@ -405,6 +452,7 @@ p {
   animation: HTML 1s both;
   animation-delay: 3.2s;
 }
+
 .HTML:after {
   background-color: var(--blue);
   width: 4.8vw;
@@ -416,10 +464,12 @@ p {
   border: rgb(194, 97, 97) solid;
   border-width: 0 0.4vw 0.4vw 0.4vw;
 }
+
 @keyframes HTML {
   from {
     top: -20vw;
   }
+
   to {
     top: 8.65vw;
   }

@@ -1,10 +1,13 @@
 .message {
   width: 15%;
   margin: 3vw auto;
-  height: 13.4vw;
+  height: 14.5vw;
   position: absolute;
   top: 26vw;
-  right: 8vw;
+  right: 7.5%;
+  border: rgb(16, 0, 100) 4px solid;
+  border-radius: 1.2vw;
+
 }
 
 .modalmessage {
@@ -14,11 +17,12 @@
 .displaynone {
   display: none;
 }
+
 .message .textarea {
-  border: rgb(16, 0, 100) 4px solid;
   width: calc(100% - 2vw);
-  height: 12.4vw;
+  height: 11.4vw;
   border-radius: 1.2vw;
+
   text-align: center;
   position: absolute;
   overflow: auto;
@@ -38,14 +42,15 @@
 .message .btnmessage {
   position: absolute;
   border-top: rgb(16, 0, 100) 4px solid;
-  width: 103%;
+  width: 100%;
   height: 2vw;
-  top: 11.4vw;
+  bottom: 0;
+  /* top: 11.4vw; */
   left: 0;
   font-size: 1.1vw;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 0 0 1vw 1vw;
+  border-radius: 0 0 0.7vw 0.7vw;
   padding: 0px;
   display: flex;
   align-items: center;
@@ -118,6 +123,7 @@
   .message {
     display: none;
   }
+
   .displaynone {
     display: none;
   }

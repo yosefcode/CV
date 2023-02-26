@@ -8,11 +8,11 @@ function TabPanel({ setModal }) {
   const [tababout, setTababout] = useState();
   const [tabresume, setTabresume] = useState();
 
-  const showProject = () => {
+  const showAbout = () => {
     setShow(0);
   };
-  const showAbout = () => {
-    setShow(5);
+  const showProject = () => {
+    setShow(1);
   };
   const showResume = () => {
     setShow(6);
@@ -21,11 +21,11 @@ function TabPanel({ setModal }) {
   return (
     <div className="tabs">
       <div className="divbtntabs">
+        <button className={`btntabs btn2 ${tababout} `} onClick={showAbout}>
+          פרופיל{" "}
+        </button>
         <button className={`btntabs btn1 ${tabproject} `} onClick={showProject}>
           פרוייקטים
-        </button>
-        <button className={`btntabs btn2 ${tababout} `} onClick={showAbout}>
-          על עצמי
         </button>
         <button className={`btntabs btn3 ${tabresume} `} onClick={showResume}>
           התמחות
@@ -38,6 +38,7 @@ function TabPanel({ setModal }) {
           setTababout={setTababout}
           setTabresume={setTabresume}
           show={show}
+          setShow={setShow}
         />
       </div>
     </div>
