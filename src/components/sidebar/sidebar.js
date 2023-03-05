@@ -6,6 +6,7 @@ import mail from "./img/mail.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MessageIcon from "@material-ui/icons/Message";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function SideBar({ setModalmessage }) {
   const [isShown, setIsShown] = useState(false);
@@ -29,6 +30,19 @@ function SideBar({ setModalmessage }) {
       }}
       onClick={() => {
         window.open("https://github.com/yosefcode");
+      }}
+    />
+  );
+  const linkedIn = (
+    <LinkedInIcon
+      className="linkedIn"
+      style={{
+        fontSize: "40vw @media only screen and (max-width: 700px) ",
+      }}
+      onClick={() => {
+        window.open(
+          "https://www.linkedin.com/in/yosef-cohen-full-stack-developer/"
+        );
       }}
     />
   );
@@ -130,6 +144,7 @@ function SideBar({ setModalmessage }) {
             {message}
             {download}
             {downloadSmallScreen}
+            {linkedIn}
             {github}
             {isShown && (
               <div className="speech-bubble">

@@ -31,6 +31,12 @@
   font-size: 3.5vw;
 }
 
+.sidebar .linkedIn {
+  cursor: pointer;
+  margin: 0 1vw;
+  font-size: 4vw;
+}
+
 .sidebar .download {
   border: var(--blue-text) 0.3vw solid;
   color: var(--blue-text);
@@ -40,9 +46,11 @@
   margin: 0 1vw;
   font-size: 3vw;
 }
+
 .sidebar .downloadsmallscreen {
   display: none;
 }
+
 .sidebar .divbtnmodal {
   display: none;
 }
@@ -52,12 +60,14 @@
   width: 2.2vw;
   height: 2.2vw;
 }
+
 .sidebar .phone {
   cursor: pointer;
   width: 2.2vw;
   height: 2.2vw;
   border-radius: 30px;
 }
+
 .sidebar .divmail {
   display: flex;
   align-items: center;
@@ -65,17 +75,20 @@
   margin-top: 1vw;
   font-size: 1.4vw;
 }
+
 .sidebar .divphone {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .sidebar .divlinks {
   margin-top: 3vw;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
+
 .sidebar .messagelink {
   display: none;
 }
@@ -95,12 +108,14 @@
   text-align: center;
   line-height: normal;
 }
+
 .speech-bubble:before,
 .speech-bubble:after {
   position: absolute;
   z-index: -1;
   content: "";
 }
+
 .speech-bubble:after {
   top: 0;
   right: 0;
@@ -110,6 +125,7 @@
   transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
   background: #f4fbfe;
 }
+
 .speech-bubble:before {
   border: solid 0 transparent;
   border-right: solid 3.5em #f4fbfe;
@@ -120,9 +136,11 @@
   height: 1em;
   transform: rotate(45deg) skewX(75deg);
 }
+
 h2 {
   display: inline;
 }
+
 @media only screen and (max-width: 700px) {
   .sidebar {
     position: absolute;
@@ -162,15 +180,16 @@ h2 {
 
   .sidebar .git {
     cursor: pointer;
-    margin: 0 5vw 5vw;
-
     font-size: 10vw;
+  }
+
+  .sidebar .linkedIn {
+    cursor: pointer;
+    font-size: 12vw;
   }
 
   .sidebar .messagelink {
     color: var(--blue-text);
-    margin: 0 5vw 5vw;
-
     display: flex;
     font-size: 10vw;
   }
@@ -178,6 +197,7 @@ h2 {
   .sidebar .download {
     display: none;
   }
+
   .sidebar .downloadsmallscreen {
     display: inline;
     border: var(--blue-text) 1vw solid;
@@ -188,17 +208,20 @@ h2 {
     /* margin: 1vw 5vw; */
     font-size: 8.5vw;
   }
+
   .sidebar .mail {
     cursor: pointer;
     width: 9.2vw;
     height: 9.2vw;
   }
+
   .sidebar .phone {
     cursor: pointer;
     width: 9.2vw;
     height: 9.2vw;
     border-radius: 30px;
   }
+
   .sidebar .titleleft {
     display: flex;
     align-items: center;
@@ -210,6 +233,7 @@ h2 {
     top: 15%;
     right: 35%;
   }
+
   .sidebar .divmail {
     margin-top: 2vw;
 
@@ -218,17 +242,21 @@ h2 {
     justify-content: center;
     font-size: 5vw;
   }
+
   .sidebar .divphone {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .sidebar .divlinks {
     margin-top: 4vw;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
   }
+
   .speech-bubble {
     position: absolute;
     z-index: 1;
@@ -245,12 +273,14 @@ h2 {
     text-align: center;
     line-height: normal;
   }
+
   .speech-bubble:before,
   .speech-bubble:after {
     position: absolute;
     z-index: -1;
     content: "";
   }
+
   .speech-bubble:after {
     top: 0;
     right: 0;
@@ -260,6 +290,7 @@ h2 {
     transform: rotate(2deg) translate(0.85em, -0.75em) scale(1.02);
     background: #f4fbfe;
   }
+
   .speech-bubble:before {
     border: solid 0 transparent;
     border-right: solid 20vw #f4fbfe;
@@ -270,22 +301,26 @@ h2 {
     height: 1em;
     transform: rotate(45deg) skewX(75deg);
   }
+
   .sidebar .divbtnmodal {
     margin: 2vw auto;
     width: 70%;
     display: flex;
     justify-content: space-around;
   }
+
   .sidebar .btnmodal {
     background-color: transparent;
     font-size: 9vw;
     border: none;
     font-weight: 900;
   }
+
   .yes {
     color: green;
     text-decoration: none;
   }
+
   .no {
     color: red;
   }

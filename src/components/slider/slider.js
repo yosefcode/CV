@@ -68,16 +68,9 @@ const Slider = (props) => {
       : projectactive();
   }, [currentSlide]);
 
-  // React.useEffect(() => {
-  //   slider && slider.moveToSlideRelative(currentSlide);
-  //   // slider && slider.moveToSlideRelative(show);
-  // }, [currentSlide, slider]);
   React.useEffect(() => {
-    // setCurrentSlide(show);
-    // slider && slider.moveToSlideRelative(currentSlide);
     slider && slider.moveToSlideRelative(show);
   }, [show, slider]);
-  console.log(show);
 
   // React.useEffect(() => {
   //   timer.current = setInterval(() => {
