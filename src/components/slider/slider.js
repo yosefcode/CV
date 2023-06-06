@@ -4,7 +4,6 @@ import { useKeenSlider } from "keen-slider/react";
 import "./slider.css";
 import TruckWeb from "./truck-web/truck-web";
 import GameDouble from "./game-double/game-double";
-import Shops from "./shops/shops";
 import TruckApp from "./truck-app/truck-app";
 import Apartments from "./apartments/apartments";
 import Resume from "./resume/resume";
@@ -61,7 +60,7 @@ const Slider = (props) => {
   };
 
   React.useEffect(() => {
-    currentSlide === 6
+    currentSlide === 5
       ? resumeactive()
       : currentSlide === 0
       ? aboutactive()
@@ -101,9 +100,6 @@ const Slider = (props) => {
           </div>
           <div className="keen-slider__slide number-slide">
             <GameDouble />
-          </div>
-          <div className="keen-slider__slide number-slide">
-            <Shops />
           </div>
           <div className="keen-slider__slide number-slide">
             {loadrsume && <Resume />}

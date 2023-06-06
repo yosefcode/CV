@@ -61,9 +61,7 @@ function About({ setShow }) {
           {" "}
           משחק - DOUBLE
         </li>
-        <li className="li_project link_project" onClick={() => setShow(5)}>
-          חנות
-        </li>
+        <li className="li_project link_project">חנות</li>
         <p className="Description_project">פרוייקט הגמר של לימודי Full-Stack</p>
       </div>
     </div>
