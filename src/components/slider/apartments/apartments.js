@@ -8,7 +8,7 @@ const Shops = () => {
     <div
       className="divall apartments"
       onClick={() => {
-        window.open("https://apartments-nine.vercel.app/");
+        window.open("https://main.d1kkh4dgfv8547.amplifyapp.com/");
       }}
     >
       <div className="title" dir="rtl">
