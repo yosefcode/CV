@@ -8,7 +8,7 @@ const Shops = () => {
     <div
       className="divall apartments"
       onClick={() => {
-        window.open("https://main.d1kkh4dgfv8547.amplifyapp.com/");
+        window.open("https://www.vainafash.co.il/");
       }}
     >
       <div className="title" dir="rtl">
@@ -22,12 +22,8 @@ const Shops = () => {
         <li>מפות</li>
         <li>Login - Firebase</li>
         <li>איזור אישי</li>
+        <li>פרסום מודעות</li>
         <li>ניהול - CRUD</li>
-        <h3>האתר עדיין בבנייה</h3>
-      </div>
-      <div className="divuser title">
-        <li>USER - aaa@gmail.com </li>
-        <li>PASSWORD - 123456</li>
       </div>
 
       <img className="imgproject" src={imgapartments} alt="" />
